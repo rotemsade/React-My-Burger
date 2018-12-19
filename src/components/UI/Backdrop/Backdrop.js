@@ -8,7 +8,7 @@ const backdrop = props =>
       style={{
         display: props.show ? "block" : "none"
       }}
-      onClick={props.modalClose}
+      onClick={props.clicked}
     />
   ) : null;
 
