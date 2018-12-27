@@ -7,21 +7,35 @@
 .Label {
   font-weight: bold;
   display: block;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
 }
 
 .InputElement {
-    outline: none;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-    font: inherit;
-    padding: 6px 10px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+  outline: none;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Invalid {
+  border-color: red;
+  background-color: #fda49a;
 }
 
 .InputElement:focus {
-    outline: none;
-    background-color: #cccccc;
+  outline: none;
+  background-color: #cccccc;
+}
+
+.ErrorMessage {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 0 0 11px;
+  margin: 0;
+  color: #de2929;
 }
