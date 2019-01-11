@@ -130,13 +130,6 @@ class ContactData extends Component {
       deliveryMethod: this.state.orderForm.deliveryMethod.value
     };
     this.props.onOrderBurger(order);
-    // axios
-    //   .post("/orders.json", order)
-    //   .then(res => {
-    //     this.setState({ loading: false });
-    //     this.props.history.push("/");
-    //   })
-    //   .catch(err => this.setState({ loading: false }));
   };
 
   checkValidity(value, rules) {
