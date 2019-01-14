@@ -59,14 +59,12 @@ export const auth = (email, password, isSignup) => {
       const expirationTime = new Date(
         new Date().getTime() + res.data.expiresIn * 1000
       );
-      console.log(res);
       localStorage.setItem("token", res.data.idToken);
       localStorage.setItem("expirationTime", expirationTime);
       localStorage.setItem("userId", res.data.localId);
       dispatch(authSuccess(res.data.idToken, res.data.localId));
       dispatch(checkAuthTimeout(res.data.expiresIn));
     } catch (err) {
-      console.log(err);
       dispatch(authFail(err.response.data.error));
     }
   };
